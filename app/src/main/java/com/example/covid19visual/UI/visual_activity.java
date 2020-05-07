@@ -51,12 +51,12 @@ public class visual_activity extends AppCompatActivity {
                        Toast.makeText(visual_activity.this, event.getData().get("x") + ":" + event.getData().get("value"), Toast.LENGTH_SHORT).show();
                    }
                });
-               Log.d("chart" ,"onCreate: "+"ggggg");
+
                pie.data(data);
-               pie.title("Postitive case by Age Group");
+               pie.title("Current Case Status");
                pie.labels().position("outside");
                pie.legend().title()
-                       .text("Retail channels")
+                       .text("Current Case Status")
                        .padding(0d, 0d, 10d, 0d);
 
                pie.legend()

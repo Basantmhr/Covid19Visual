@@ -55,7 +55,7 @@
                         android:layout_centerInParent="true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Age Group Analysis of Positive Case"
+                        android:text="Current Case Status Analysis"
                         android:layout_marginTop="5dp"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentRight="true"
