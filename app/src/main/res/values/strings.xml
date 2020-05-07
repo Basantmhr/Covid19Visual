@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Covid19 Visualizer</string>
+    <string name="welcomeText">Welcome</string>
+    <string name="covid19_visualizer_text">Covid19 Visualizer</string>
+    <string name="selectVisualText">Select Visualization</string>
+
+
+</resources>
