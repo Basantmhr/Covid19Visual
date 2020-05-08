@@ -48,17 +48,16 @@ public class activity_visual_new extends AppCompatActivity {
                             .titleFormat("{%X}")
                             .position(Position.CENTER_TOP)
                             .anchor(Anchor.CENTER_TOP)
-                            .offsetX(0d)
-                            .offsetY(5d)
-                            .format("{%Value}{groupsSeparator: }");
+                            .offsetX(50)
+                            .format("{%Value}");
 
                     cartesian.animation(true);
                     cartesian.title("Population vs Bed in Hospital Analysis");
 
-                    cartesian.yScale().minimum(0d);
+                    cartesian.yScale().minimum(0);
 
-                    cartesian.yAxis(0).labels().format("{%Value}{groupsSeparator: }");
-                    cartesian.xAxis(0).labels().rotation(90).format("{%Value}{groupsSeparator: }");
+                    cartesian.yAxis(0).labels().format("{%Value}");
+                    cartesian.xAxis(0).labels().rotation(90).format("{%Value}");
                     cartesian.tooltip().positionMode(TooltipPositionMode.POINT);
                     cartesian.interactivity().hoverMode(HoverMode.BY_X);
 

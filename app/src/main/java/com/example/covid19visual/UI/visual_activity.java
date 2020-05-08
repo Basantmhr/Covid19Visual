@@ -55,14 +55,12 @@ public class visual_activity extends AppCompatActivity {
                pie.data(data);
                pie.title("Current Case Status");
                pie.labels().position("outside");
-               pie.legend().title()
-                       .text("Current Case Status")
-                       .padding(0d, 0d, 10d, 0d);
+
 
                pie.legend()
-                       .position("center-bottom")
-                       .itemsLayout(LegendLayout.HORIZONTAL)
-                       .align(Align.CENTER);
+                       .position("top")
+                       .itemsLayout(LegendLayout.HORIZONTAL);
+
 
                anyChartView.setChart(pie);
            }
