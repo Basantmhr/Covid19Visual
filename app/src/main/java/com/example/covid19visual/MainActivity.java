@@ -4,18 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.os.Handler;
-import android.util.Log;
 
 import com.example.covid19visual.UI.dashboard;
-import com.example.covid19visual.UI.visual_activity;
-import com.example.covid19visual.data.AsyncGetDataCompleted;
-import com.example.covid19visual.data.JsonPlaceHolder;
-import com.example.covid19visual.model.BedPer10Thousand;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,18 +1,14 @@
 package com.example.covid19visual.data;
 
-import android.app.DownloadManager;
 import android.util.Log;
-
-import androidx.annotation.LongDef;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
-import com.android.volley.toolbox.Volley;
 import com.example.covid19visual.controller.AppController;
 import com.example.covid19visual.model.BedPer10Thousand;
-import com.example.covid19visual.model.currentStatusModel;
+import com.example.covid19visual.model.CurrentStatusModel;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -63,7 +59,7 @@ public class JsonPlaceHolder {
     }
 
 
-    private ArrayList<currentStatusModel> currentStatusModels= new ArrayList<>();
+    private ArrayList<CurrentStatusModel> currentStatusModels= new ArrayList<>();
     public List getCurrentStatusData(final AsyncnewTask mcallback)
     {
         //Log.d("inside", "getCurrentStatusData: ");
@@ -75,7 +71,7 @@ public class JsonPlaceHolder {
 
                 try {
                     for(int i=0;i<response.length();i++) {
-                        currentStatusModel cm = new currentStatusModel();
+                        CurrentStatusModel cm = new CurrentStatusModel();
                         cm.setpatientStatus(response.getJSONArray(i).getString(0));
                         cm.setpatientCount(response.getJSONArray(i).getInt(1));
                          //Log.d("dd", "onResponse: "+response.getJSONArray(i).getString(0)+i);

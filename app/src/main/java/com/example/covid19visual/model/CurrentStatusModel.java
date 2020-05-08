@@ -1,6 +1,6 @@
 package com.example.covid19visual.model;
 
-public class currentStatusModel {
+public class CurrentStatusModel {
     String patientStatus;
     int patientCount;
     @Override
@@ -10,12 +10,12 @@ public class currentStatusModel {
                 ", patientCount=" + patientCount +
                 '}';
     }
-   public  currentStatusModel()
+   public CurrentStatusModel()
     {
 
     }
 
-    public currentStatusModel(String patientStatus, int patientCount) {
+    public CurrentStatusModel(String patientStatus, int patientCount) {
         this.patientStatus = patientStatus;
         this.patientCount = patientCount;
     }
