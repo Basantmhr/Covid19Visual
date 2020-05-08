@@ -39,7 +39,7 @@ public class visual_activity extends AppCompatActivity {
            public void onRecievedSuccesscurrent(ArrayList<currentStatusModel> currentStatusModels) {
               currentStatusModelArrayList = currentStatusModels;
                for(int i=0;i<currentStatusModelArrayList.size();i++) {
-                   data.add(new ValueDataEntry(currentStatusModelArrayList.get(i).getmStatus(), currentStatusModelArrayList.get(i).getMcount()));
+                   data.add(new ValueDataEntry(currentStatusModelArrayList.get(i).getpatientStatus(), currentStatusModelArrayList.get(i).getpatientCount()));
 
                }
                AnyChartView anyChartView = findViewById(R.id.chartView);

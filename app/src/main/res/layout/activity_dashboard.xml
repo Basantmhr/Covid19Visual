@@ -10,7 +10,7 @@
         android:id="@+id/dashboardWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome To Covid19 Visualizer"
+        android:text="@string/dashboardWelcomeString"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,11 +51,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <TextView
-                        android:id="@+id/section1"
+                        android:id="@+id/currentStatusTag"
                         android:layout_centerInParent="true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Current Case Status Analysis"
+                        android:text="@string/currentStatusString"
                         android:layout_marginTop="5dp"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentRight="true"
@@ -80,10 +80,10 @@
                     android:layout_height="match_parent"
                     >
                     <TextView
-                        android:id="@+id/section2"
+                        android:id="@+id/bedAvailTag"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="State Wise Analysis of Bed Available"
+                        android:text="@string/bedAvailString"
                         android:layout_centerInParent="true"
                         android:layout_marginTop="5dp"
                         android:layout_alignParentLeft="true"

@@ -2,7 +2,9 @@
     <string name="app_name">Covid19 Visualizer</string>
     <string name="welcomeText">Welcome</string>
     <string name="covid19_visualizer_text">Covid19 Visualizer</string>
-    <string name="selectVisualText">Select Visualization</string>
+    <string name="dashboardWelcomeString">Welcome To Covid19 Visualizer</string>
+    <string name="currentStatusString">Current Case Status Analysis</string>
+    <string name="bedAvailString">State Wise Analysis of Bed Available</string>
 
 
 </resources>

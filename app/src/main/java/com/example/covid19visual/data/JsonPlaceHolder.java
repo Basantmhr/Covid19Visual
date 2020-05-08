@@ -61,6 +61,8 @@ public class JsonPlaceHolder {
         AppController.getInstance().addToRequestQueue(jsonArrayRequest);
         return bedModelArrayList;
     }
+
+
     private ArrayList<currentStatusModel> currentStatusModels= new ArrayList<>();
     public List getCurrentStatusData(final AsyncnewTask mcallback)
     {
@@ -74,8 +76,8 @@ public class JsonPlaceHolder {
                 try {
                     for(int i=0;i<response.length();i++) {
                         currentStatusModel cm = new currentStatusModel();
-                        cm.setmStatus(response.getJSONArray(i).getString(0));
-                        cm.setMcount(response.getJSONArray(i).getInt(1));
+                        cm.setpatientStatus(response.getJSONArray(i).getString(0));
+                        cm.setpatientCount(response.getJSONArray(i).getInt(1));
                          //Log.d("dd", "onResponse: "+response.getJSONArray(i).getString(0)+i);
                          //Log.d("mm", "onResponse: "+response.getJSONArray(i).getInt(1)+i);
                         currentStatusModels.add(cm);

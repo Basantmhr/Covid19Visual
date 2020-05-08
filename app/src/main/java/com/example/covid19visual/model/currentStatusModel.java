@@ -1,11 +1,13 @@
 package com.example.covid19visual.model;
 
 public class currentStatusModel {
+    String patientStatus;
+    int patientCount;
     @Override
     public String toString() {
         return "currentStatusModel{" +
-                "mStatus='" + mStatus + '\'' +
-                ", mcount=" + mcount +
+                "patientStatus='" + patientStatus + '\'' +
+                ", patientCount=" + patientCount +
                 '}';
     }
    public  currentStatusModel()
@@ -13,27 +15,26 @@ public class currentStatusModel {
 
     }
 
-    public currentStatusModel(String mStatus, int mcount) {
-        this.mStatus = mStatus;
-        this.mcount = mcount;
+    public currentStatusModel(String patientStatus, int patientCount) {
+        this.patientStatus = patientStatus;
+        this.patientCount = patientCount;
     }
 
-    public String getmStatus() {
-        return mStatus;
+    public String getpatientStatus() {
+        return patientStatus;
     }
 
-    public void setmStatus(String mStatus) {
-        this.mStatus = mStatus;
+    public void setpatientStatus(String patientStatus) {
+        this.patientStatus = patientStatus;
     }
 
-    public int getMcount() {
-        return mcount;
+    public int getpatientCount() {
+        return patientCount;
     }
 
-    public void setMcount(int mcount) {
-        this.mcount = mcount;
+    public void setpatientCount(int patientCount) {
+        this.patientCount = patientCount;
     }
 
-    String mStatus;
-    int mcount;
+
 }
